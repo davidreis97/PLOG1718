@@ -338,9 +338,3 @@ removeEaten(Linha,Coluna,Old,New,EatenPiecesOld,EatenPiecesNew, PlayerNo) :-
         \+ surrounded(Linha,Coluna,Old,PlayerNo,Tipo),
         ColunaNova is Coluna+1,
         removeEaten(Linha,ColunaNova,Old,New,EatenPiecesOld,EatenPiecesNew,PlayerNo).
-        
-        
-        
-
-
-        
