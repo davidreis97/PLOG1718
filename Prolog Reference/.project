@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Prolog Reference</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>se.sics.sicstus.ide.prologBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>se.sics.sicstus.ide.prologNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>library</name>
+			<type>2</type>
+			<locationURI>SP_LIBRARY_DIR</locationURI>
+		</link>
+	</linkedResources>
+	<filteredResources>
+		<filter>
+			<id>1506183448362</id>
+			<name></name>
+			<type>22</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.po$</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
+</projectDescription>
