@@ -224,20 +224,20 @@ printBoardLine([3|R]) :-
         printBoardLine(R).
 
 /*Prints the board*/
-printBoard(Est) :-
+printBoard(Tabu) :-
         nl,
         print(' |0|1|2|3|4|'),
         nl,
-        printBoard(0,Est).
+        printBoard(0,Tabu).
 printBoard(_,[]) :- print('------------'), nl.
-printBoard(Linha,[L|R]) :-
+printBoard(NumLinha,[Linha|Resto]) :-
         print('------------'),
         print('\n'),
-        print(Linha),
-        printBoardLine(L),
+        print(NumLinha),
+        printBoardLine(Linha),
         print('\n'),
-        LinhaNova is Linha+1,
-        printBoard(LinhaNova,R).
+        NumLinhaNova is NumLinha+1,
+        printBoard(NumLinhaNova,R).
 
 /*Removes a piece from the board*/
 removePiece(0,0,[[_|LR]|R],[[0|LR]|R]).
